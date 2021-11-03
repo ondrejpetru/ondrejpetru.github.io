@@ -5,11 +5,17 @@
 <h1>Moj nadpis</h1>
 
 <p>moja stranka</p>
-<form action="/action_page.php">
-  <label for="lname">Heslo:</label>
-  <input type="text" id="lname" name="heslo"><br><br>
-  <input type="submit" value="Ukaz tajnu cast">
-</form>
+Heslo: <input type="text" id="heslo" name="heslo"><br><br>
+<button onclick="myFunction()">Ukaz tajnu cast</button>
 
+  <p id="tajny" hidden>tajny text</p> 
+  
+<script>
+function myFunction() {
+  document.getElementById("tajny").hidden = false
+  //document.getElementById("heslo").value;
+}
+</script>
+  
 </body>
 </html>
