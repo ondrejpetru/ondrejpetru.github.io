@@ -66,10 +66,12 @@ function myFunction() {
   if (document.getElementById("heslo").value === "745896+-") {
   document.getElementById("tajny").hidden = false};
 }
+  var vysledok = 0;
   function paragraf() {
   var x = Math.floor(Math.random() * 10)+1;
   var y = Math.floor(Math.random() * 10)+1;
-  let zadanie = "Vypocitaj " + x + " + " + y;
+  vysledok = x+y;
+  let zadanie = "Vypocitaj " + x + " + " + y + " a vysledok je " + vysledok;
   document.getElementById("priklad").innerHTML = zadanie; 
   }
 </script>
