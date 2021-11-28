@@ -31,10 +31,15 @@ priklad normalneho textu
   background-image: repeating-radial-gradient(red, yellow 10%, green 15%, violet 20%)">MARTIN petru oficial HtMl</h1>
   
   <p id="priklad" style="text-align:center">
-    tu bude priklad3
+    tu bude priklad
   </p>  
   <button onclick="paragraf()">novy priklad</button>
  
+  
+   <p id="martin" style="text-align:center">
+    (...tu bude priklad...)
+  </p>  
+  <button onclick="element()">(! novy priklad !)</button>
   
   <div style="color:indigo;text-align:center;
    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg, green 10deg 20deg, violet 20deg 25deg);
@@ -74,6 +79,18 @@ function myFunction() {
   let zadanie = "Vypocitaj " + x + " + " + y;
   document.getElementById("priklad").innerHTML = zadanie; 
   }
+  
+  }
+  var vysledok = 0;
+  function paragraf() {
+  var x = Math.floor(Math.random() * 10)+1;
+  var y = Math.floor(Math.random() * 10)+1;
+      var a = Math.floor(Math.random() * 10)+1;
+  vysledok = x+y+a;
+  let zadanie = "Vypocitaj " + x + " + " + y + " + a;
+  document.getElementById("priklad").innerHTML = zadanie; 
+  }
+  
 </script>
   
 </body>
