@@ -35,7 +35,7 @@ priklad normalneho textu
   </p>  
   <button onclick="paragraf()">novy priklad</button>
  
- vypocitaj: <input type="text" id="vypocitaj" name="m.artin"><br><br>
+ vypocitaj: <input type="number" id="vypocitaj" name="vypocitaj"><br><br>
     <button onclick="kontrola()">skontroluj</button>
   
   
@@ -95,7 +95,7 @@ function myFunction() {
   }
   
   function kontrola() {
-   if (vysledok === document.getElementById("vypocitaj").value) {
+   if (vysledok == document.getElementById("vypocitaj").value) {
      document.getElementById("priklad").innerHTML = "dobre";
    } else {
      document.getElementById("priklad").innerHTML = "zle";
